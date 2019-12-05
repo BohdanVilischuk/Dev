@@ -1,0 +1,58 @@
+.header-top {
+    padding: 10px 0;
+    background-color: $header-top-bg;
+
+    &__link {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        &:before {
+            content: "";
+            width: 0%;
+            height: 1px;
+            background-color: $white;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition-duration: 0.3s;
+        }
+
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.header {
+    &__wrapper {
+        padding: 20px 0;
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        margin-right: 5px;
+    }
+
+    &__subscribe {
+        color: $header-logo;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}

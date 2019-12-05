@@ -1,0 +1,113 @@
+.news {
+    padding: 30px 0;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $news-title;
+        margin-bottom: 30px;
+        position: relative;
+
+        span {
+            padding-right: 20px;
+            background-color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: $news-title;
+            z-index: 1;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__big-item {
+        max-width: 400px;
+        margin-right: 20px;
+    }
+
+    &__list-item {
+        margin-bottom: 20px;
+    }
+
+    &__load-more {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+.news-big-item {
+    &__frame {
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__description {
+        color: $news-desc;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $black;
+    }
+}
+
+.news-small-item {
+    display: flex;
+
+    &__frame {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        display: block;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__description {
+        color: $news-desc;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        color: $black;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.btn-more {
+    height: 45px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: $footer-feedback;
+    color: $white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+
+    &:hover {
+        background-color: $blue-hover;
+    }
+}
