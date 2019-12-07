@@ -1,0 +1,130 @@
+.text-page {
+    padding: 40px 0;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        width: calc(70% - 30px);
+        box-shadow: 0 0 3px rgba($color: $black, $alpha: 0.4);
+        padding: 10px;
+        border-radius: 3px;
+        margin-right: 30px;
+    }
+
+    &__latest-news {
+        box-shadow: 0 0 3px rgba($color: $black, $alpha: 0.4);
+        width: 30%;
+        padding: 10px;
+    }
+
+    &__prev-link {
+        padding-bottom: 15px;
+        border-bottom: 2px solid $silver;
+    }
+
+    &__post-text {
+        padding: 10px 0;
+    }
+}
+
+.prev-link {
+    color: $footer-feedback;
+    font-size: 14px;
+    font-weight: 700;
+    transition-duration: 0.3s;
+
+    &__icon {
+        fill: $footer-feedback;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        left: 5px;
+        margin-right: 5px;
+        transition-duration: 0.3s;
+    }
+
+    &:hover {
+        color: $blue-hover;
+
+        .prev-link__icon {
+            left: 2px;
+        }
+    }
+}
+
+.post-text {
+    color: $text-color;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.latest-news {
+    &__title {
+        border-bottom: 1px solid $silver;
+        margin-bottom: 20px;
+
+        span {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: normal;
+            color: $white;
+            padding: 5px 10px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            background-color: $footer-feedback;
+        }
+    }
+
+    &__element {
+        border-bottom: 2px solid $blue-title;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}
+
+.latest-news-item {
+    &__frame {
+        display: block;
+        max-height: 200px;
+        margin-bottom: 5px;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__name {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        color: $blue-title;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        display: flex;
+        height: 30px;
+        width: fit-content;
+        border: 1px solid $blue-title;
+        color: $blue-title;
+        padding: 0 10px;
+        border-radius: 4px;
+        align-items: center;
+        transition-duration: 0.3s;
+
+        &:hover {
+            background-color: $blue-title;
+            color: $white;
+        }
+    }
+}
