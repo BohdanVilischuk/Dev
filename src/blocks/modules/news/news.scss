@@ -111,3 +111,27 @@
         background-color: $blue-hover;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .news {
+        &__big-item {
+            max-width: 350px;
+        }
+    }
+
+    .news-big-item {
+        &__frame {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .news {
+        &__big-item {
+            margin-bottom: 20px;
+        }
+    }
+}

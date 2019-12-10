@@ -90,6 +90,7 @@
         background-color: $blue-hover;
     }
 }
+
 .material-field {
     position: relative;
     height: 40px;
@@ -176,5 +177,29 @@
         padding: 0 2px;
         font-size: 14px;
         background-color: $white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        &__information {
+            flex-wrap: wrap;
+        }
+
+        &__location {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__form {
+            max-width: 100%;
+        }
+    }
+
+    .feedback-form {
+        &__title {
+            margin-bottom: 20px;
+        }
     }
 }

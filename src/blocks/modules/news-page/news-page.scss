@@ -89,3 +89,33 @@ $news-item: '.news-item';
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .news-page {
+        &__item {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .news-page {
+        &__item {
+            flex-wrap: wrap;
+        }
+    }
+
+    #{$news-item} {
+        &__frame {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__content {
+            padding: 0 5px 10px 5px;
+        }
+    }
+}

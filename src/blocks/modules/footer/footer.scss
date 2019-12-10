@@ -96,3 +96,15 @@
         text-decoration: underline;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .footer-feedback {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
+
+    .footer-social {
+        margin-bottom: 20px;
+    }
+}

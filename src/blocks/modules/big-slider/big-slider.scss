@@ -53,3 +53,25 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .big-slider {
+        &__frame {
+            min-height: 400px;
+        }
+
+        &__image {
+            object-fit: cover;
+            height: 100%;
+        }
+    
+        &__title {
+            font-size: 16px;
+        }
+
+        &__description {
+            max-width: 100%;
+            font-size: 14px;
+        }
+    }
+}

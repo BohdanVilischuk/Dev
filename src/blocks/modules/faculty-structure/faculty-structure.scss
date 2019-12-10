@@ -113,3 +113,25 @@ $fs: '.faculty-structure';
 
     }
 }
+
+@media screen and (max-width: 1200px) {
+    #{$fs} {
+        &__wrapper {
+            margin-right: 0;
+        }
+
+        &__item {
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #{$fs} {
+        &__item {
+            min-height: 250px;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
